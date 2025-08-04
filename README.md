@@ -1,70 +1,67 @@
-Serverless Static Website on AWS
-This project demonstrates how to host a serverless static website using AWS S3, CloudFront (CDN + HTTPS), and Route 53 for a custom domain.
+🌐 Serverless Static Website on AWS
 
 
-Features
-🌐 Static website hosted entirely on AWS S3
 
-⚡ CloudFront CDN for global low-latency delivery
+A serverless static website hosted entirely on AWS using:
 
-🔒 HTTPS enabled using AWS Certificate Manager
+S3 for static hosting
 
-🏷 Custom domain managed via Route 53
+CloudFront for CDN + HTTPS
 
-💰 Fully serverless & cost-efficient hosting
+Route 53 for custom domain & DNS
 
-Architecture
-S3 – Hosts static files (HTML, CSS, JS)
+Live Demo → https://hassanweb.net 🚀
 
-CloudFront – Caches and distributes content globally
+✨ Features
+🌐 Static website with global availability
 
-ACM – Provides SSL/TLS certificate for HTTPS
+⚡ CloudFront CDN for ultra-fast delivery
 
-Route 53 – Manages custom domain DNS
+🔒 HTTPS using AWS Certificate Manager
 
-markdown
+🏷 Custom domain via Route 53
+
+💰 Serverless & cost-efficient
+
+🏗 Architecture
+scss
 Copy
 Edit
-Browser → CloudFront → S3 Bucket
-           ↓
-       Route 53 (DNS)
-Live Demo
-🌍 https://abdirahmanweb.net/ (Replace with your domain)
+Browser 🌍
+   │
+   ▼
+CloudFront CDN ⚡
+   │
+   ▼
+S3 Bucket (Static Hosting) 📂
+   │
+   ▼
+Route 53 (DNS) 🏷
+📖 Steps to Reproduce
+S3: Create bucket & enable static website hosting
 
-How to Reproduce
-Create an S3 bucket and enable static website hosting
+Upload files: Add index.html and assets
 
-Upload your index.html (and any assets)
+CloudFront: Create distribution using S3 website endpoint
 
-Deploy CloudFront distribution using the S3 website endpoint
+SSL: Request certificate in us-east-1 (ACM)
 
-Request an SSL certificate in us-east-1 (for CloudFront)
+Route 53: Create Alias A record pointing to CloudFront
 
-Add an Alias A record in Route 53 pointing to CloudFront
+Go Live: Wait for propagation → enjoy your secure website!
 
-Wait for propagation → Your site is live with HTTPS
+🛠 Tech Stack
+Amazon S3 – Static file hosting
 
-Tech Stack
-AWS S3 – Static website hosting
-
-AWS CloudFront – Content delivery network
+CloudFront – Global CDN + HTTPS
 
 AWS Certificate Manager – SSL/TLS
 
-AWS Route 53 – DNS management
+Route 53 – DNS Management
 
-Portfolio Value
-This project demonstrates:
+📌 Future Enhancements
+🔄 Add CI/CD pipeline for auto-deploy
 
-Knowledge of AWS networking & DNS
+⚙️ Manage infrastructure with Terraform (IaC)
 
-Ability to set up serverless hosting
-
-Using CloudFront for performance & security
-
-Future Improvements
-Add CI/CD for automatic deployment
-
-Use Terraform for Infrastructure as Code (IaC)
-
-Add a custom 404 page
+📄 Add custom 404 page
