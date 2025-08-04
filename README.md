@@ -1,6 +1,6 @@
 🌐 Serverless Static Website on AWS
 
-
+```
 
 A serverless static website hosted entirely on AWS using:
 
@@ -11,6 +11,8 @@ CloudFront for CDN + HTTPS
 Route 53 for custom domain & DNS
 
 Live Demo → https://abdirahmanweb.net/
+
+```
 
 ✨ Features
 🌐 Static website with global availability
@@ -38,6 +40,7 @@ S3 Bucket (Static Hosting) 📂
    ▼
 Route 53 (DNS) 🏷
 
+```
 
 📖 Steps to Reproduce
 1. S3: Create bucket & enable static website hosting
@@ -52,7 +55,7 @@ Route 53 (DNS) 🏷
 
 6. Go Live: Wait for propagation → enjoy your secure website!
 
-
+```
 
 🛠 Tech Stack
 Amazon S3 – Static file hosting
