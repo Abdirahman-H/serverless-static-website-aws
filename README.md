@@ -38,17 +38,17 @@ S3 Bucket (Static Hosting) 📂
    ▼
 Route 53 (DNS) 🏷
 📖 Steps to Reproduce
-S3: Create bucket & enable static website hosting
+1. S3: Create bucket & enable static website hosting
 
-Upload files: Add index.html and assets
+2. Upload files: Add index.html and assets
 
-CloudFront: Create distribution using S3 website endpoint
+3. CloudFront: Create distribution using S3 website endpoint
 
-SSL: Request certificate in us-east-1 (ACM)
+4. SSL: Request certificate in us-east-1 (ACM)
 
-Route 53: Create Alias A record pointing to CloudFront
+5. Route 53: Create Alias A record pointing to CloudFront
 
-Go Live: Wait for propagation → enjoy your secure website!
+6. Go Live: Wait for propagation → enjoy your secure website!
 
 🛠 Tech Stack
 Amazon S3 – Static file hosting
