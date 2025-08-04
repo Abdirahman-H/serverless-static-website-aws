@@ -10,7 +10,7 @@ CloudFront for CDN + HTTPS
 
 Route 53 for custom domain & DNS
 
-Live Demo → https://abdirahmanweb.net/🚀
+Live Demo → https://abdirahmanweb.net/
 
 ✨ Features
 🌐 Static website with global availability
